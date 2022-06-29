@@ -154,8 +154,7 @@ A buy event is triggered when the short term EMA line crosses the long term EMA 
 What triggers a sell?
 A sell event is triggered when the short term EMA line crosses the long term EMA line from above.
 
-
-![image](https://user-images.githubusercontent.com/30857981/176336927-51ce162c-fedb-4a3e-adb0-b11e4857220c.png)
+![image](https://user-images.githubusercontent.com/30857981/176348736-892819a0-e3ea-4d3c-b020-8c00855301f6.png)
 
 Important details
 
@@ -181,7 +180,7 @@ How does an order get triggered? There are two bands, a sell band (solid red lin
 
 In order to protect against unwanted losses, it is possible to set a Min effective gain parameter. This can be set on both sides. In the figure, the Minimum effective gain displaces the current buy threshold by more than 4% to ensure that the desired Minimum effective gain is achieved.
 
-![image](https://user-images.githubusercontent.com/30857981/176337131-20d2aae7-6f6f-4411-92e0-6985fd3c525d.png)
+![image](https://user-images.githubusercontent.com/30857981/176348781-b9200f97-477b-49f1-8b94-0200436f269d.png)
 
 In the figure above, a minimum effective gain ensures that the bot does not buy back too soon in a market that had trended upwards. Also, note that the two sell trades (small yellow triangles) went through above the Bollinger Band sell threshold because of the Min effective gain setting.
 
@@ -197,7 +196,7 @@ There are several parameters you can set, some of which can be set directly in t
 
 Inside this window, the relative buy and sell margins can be set (dashed red horizontal lines). As the lowest and highest trade price will change over time, the vertical height of the window changes accordingly, which in turn means the buy and sell margin prices will change. As the market contracts, the prices become closer to each other. This also means that the initial Eff. gain* shown in the center of the time window will also change.
 
-![image](https://user-images.githubusercontent.com/30857981/176337251-b2f52180-be03-4eb7-899a-d84714dfc1b5.png)
+![image](https://user-images.githubusercontent.com/30857981/176348831-b8519161-62c4-4672-bd73-81c8df2f8ae2.png)
 
 The Min. effective gain [%] is a very important parameter. For the mArgin maker, it applies to both buy/sell and sell/buy cycles. It is always active, with the default value being 0.0%. If you want to ensure that the bot makes a gain after trading fees have been subtracted, a positive value must be given. Note that this means a bot order can get stuck at a particular price in order not to violate the Min. effective gain.
 
@@ -213,7 +212,7 @@ The static ping pong bot places limit orders.
 
 This is the simplest bot in Margin. Click on the strategy button (chess knight with +) to create a new bot. Initially, it will default to an effective gain of 0.1% around the spread. Click and drag the buy and sell price lines to set the prices you want. The bot waits until its order is fully filled before switching actions and then places a limit order on the opposite side. In the example below, the bot has just placed a limit buy order and is waiting for the order to become active. If this order gets filled, a limit sell order for the same amount will be placed on the opposite side. Here, we’ve specified an effective gain of just over 3%.
 
-![image](https://user-images.githubusercontent.com/30857981/176337356-d1e8d273-8067-401e-a25a-790f26a86f7c.png)
+![image](https://user-images.githubusercontent.com/30857981/176348870-92e1017a-0650-44fa-8f03-c5b53a043b39.png)
 
 The bot will continue to trade until you explicitly stop it.
 </details>
