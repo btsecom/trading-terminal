@@ -33,7 +33,7 @@ sudo systemctl enable xrdp
 sudo systemctl start xrdp sudo apt install -y firefox
 ```
 
-Next, log in as the margin user through your favorite RDP client, open Firefox and navigate to [btse.com](http://btse.com/) , download the latest Linux margin AppImage file (for example margin-x86_64-4.6.0.AppImage) to your Downloads directory.
+Next, log in as the margin user through your favorite RDP client, open Firefox and navigate to <a href="https://www.btse.com/tradingterminal" target="_blank">https://www.btse.com/tradingterminal</a> , download the latest Linux margin AppImage file (for example margin-x86_64.AppImage) to your Downloads directory.
 
 Next, open a terminal:
 
@@ -50,7 +50,7 @@ sudo apt install -y xcb* libxcb* libxkbcommon*
 Finally, run the terminal:
 
 ```bash
-./margin-x86_64-4.6.0.AppImage
+./margin-x86_64.AppImage
 ```
 </details>
 
@@ -78,7 +78,7 @@ sudo apt install libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-glx0 libxcb-iccc
 
 If this does not suffice, you can export the following environment variable before starting Margin, which should provide additional help to find out which additional libraries/packages are missing.
 
-QT_DEBUG_PLUGINS=1 ./margin-x86_64-4.6.0.AppImage
+QT_DEBUG_PLUGINS=1 ./margin-x86_64.AppImage
 </details>
 
 
