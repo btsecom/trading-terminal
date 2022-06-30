@@ -33,7 +33,7 @@ sudo systemctl enable xrdp
 sudo systemctl start xrdp sudo apt install -y firefox
 ```
 
-Next, log in as the margin user through your favorite RDP client, open Firefox and navigate to <a href="https://www.btse.com/tradingterminal" target="_blank">https://www.btse.com/tradingterminal</a> , download the latest Linux margin AppImage file (for example margin-x86_64.AppImage) to your Downloads directory.
+Next, log in as the margin user through your favorite RDP client, open Firefox and navigate to https://www.btse.com/tradingterminal , download the latest Linux margin AppImage file (for example margin-x86_64.AppImage) to your Downloads directory.
 
 Next, open a terminal:
 
