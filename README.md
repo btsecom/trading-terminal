@@ -106,7 +106,9 @@ Then you should be good to go! Note, if you set up a fresh full version of Ubunt
 Margin supports Windows, macOS and Linux in the following flavors:
 
 Windows 10 x64
+
 macOS (every version from 10.14 onwards)
+
 Ubuntu 20.04+
 </details>
 
@@ -149,9 +151,11 @@ Please [follow this link](https://gist.github.com/warp1337/3ebe461af606046f382e5
 The EMA crossover bot can be started in one of three modes: buy, sell or any. In the 'buy' mode it will wait until a buy situation arises before triggering its first spot order. In 'any' mode it is ready to either buy or sell, whichever situation occurs first.
 
 What triggers a buy?
+
 A buy event is triggered when the short term EMA line crosses the long term EMA line from below.
 
 What triggers a sell?
+
 A sell event is triggered when the short term EMA line crosses the long term EMA line from above.
 
 ![image](https://user-images.githubusercontent.com/30857981/176336927-51ce162c-fedb-4a3e-adb0-b11e4857220c.png)
